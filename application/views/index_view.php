@@ -344,10 +344,8 @@
           <h1>
             #DatosAbiertos
           </h1>
-
-        </section>
-        <select id="tipobra">
-         <option value="-1">-</option>
+          <select id="tipobra" class="select2" style="width:250px">
+         <option value="-1">Seleccione Tipo de Obra</option>
          <option value="1">Gestión</option>
          <option value="2">Luminarias</option>
          <option value="3">Mantenimiento Integral de Vías</option>
@@ -356,6 +354,9 @@
          <option value="6">Rampas</option>
          <option value="7">Señalización</option>
         </select>
+
+        </section>
+
 
         <!-- Main content -->
         <section class="content">
@@ -635,8 +636,9 @@
     <script src="assets_1/js/jquery.min.js"></script>
     <!-- Bootstrap 3.3.2 JS -->
     <script src="assets_1/js/bootstrap.min.js" type="text/javascript"></script>
-
+    <script src="assets_1/js/select2.min.js" type="text/javascript"></script>
     <script src="assets/js/custom.js" type="text/javascript"></script>
+
 
 <div class="jvectormap-label"></div></body>
 

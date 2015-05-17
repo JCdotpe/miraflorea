@@ -1,3 +1,4 @@
+$(".select2").select2();
 /**********************************
    Author: Symbiotic-Themes
    Theme: Chappi (App Landingpage)
@@ -68,6 +69,12 @@ $("#tablacuerpo > tbody > tr").remove();
    $('#tablacuerpo > tbody:last').append(fila1);
 
     };
+
+  /*var disqus_shortname = 'sitiomirafloresopendata';
+  var disqus_identifier = row;
+
+    $.getScript ("http://" + disqus_shortname + ".disqus.com/count.js");*/
+
 
 
   // var fila1 = '<tr>';
@@ -269,14 +276,14 @@ $(document).on("click",'.obralink',function(e) {
 
 
     /* * * CONFIGURATION VARIABLES * * */
-    var disqus_shortname = 'sitiomirafloresopendata';
-    var disqus_identifier = row;
+    /*var disqus_shortname = 'sitiomirafloresopendata';
+    var disqus_identifier = $("#tipobra").val()+idx;
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
+    })();*/
 
 
 
@@ -287,6 +294,16 @@ $(document).on("click",'.obralink',function(e) {
 
       var title = $(this).text();
        vset(row,title);
+
+       var disqus_shortname = 'sitiomirafloresopendata';
+    var disqus_identifier = $("#tipobra").val()+idx;
+    console.log(disqus_identifier);
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
        e.preventDefault();
       // alert( row[1] );
     });
