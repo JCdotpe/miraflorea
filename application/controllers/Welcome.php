@@ -13,8 +13,6 @@ class Welcome extends CI_Controller {
 	public function index()
 	{
 		$data['num'] = 666;
-		// $data['archivos'] = $this->Archivo_model->get_all()->result();
-		// $this->load->view('welcome_message', $data);
 		$this->load->view('index_view',$data);
 
 	}

@@ -1,6 +1,6 @@
 <IfModule mod_rewrite.c>
 	RewriteEngine on
-	RewriteBase /
+	RewriteBase /miraflorea/
 	RewriteCond %{REQUEST_FILENAME} !-f
 	RewriteCond %{REQUEST_FILENAME} !-d
 	RewriteCond $1 !^(index\.php|images|assets|robots\.txt)
