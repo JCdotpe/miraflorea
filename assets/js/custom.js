@@ -39,6 +39,13 @@ function postular(){
 
 }
 
+function  vset(row){
+  
+}
+
+
+
+
 
 $(function(){
 
@@ -51,7 +58,7 @@ $(function(){
   });
        
  
-
+var midata;
 //val car_n
 $( "#tipobra" ).change(function() {
     var pre = $(this).val();
@@ -104,13 +111,15 @@ $( "#tipobra" ).change(function() {
           var jj = json_data.result;
           var items = [];
             // $.each(json_data.result, function() {
+
+          if(pre!='-1'){
           switch(pre) {
               case '1':
                   $.each(json_data.result, function(k,j) {
                     // console.log(k);
                     if(k!=0){
                       var asd = json_data.result[k][5];
-                      items.push('<li class="header"><a href="#" class="obralink" >' + asd + '</a></li>');
+                      items.push('<li class="header"><a href="#" class="obralink" data-id="' + k + '">' + asd + '</a></li>');
                     }
 
                   });  
@@ -121,7 +130,7 @@ $( "#tipobra" ).change(function() {
                     // console.log(k);
                     if(k!=0){
                       var asd = json_data.result[k][3];
-                      items.push('<li class="header"><a href="#" class="obralink" >' + asd + '</a></li>');
+                      items.push('<li class="header"><a href="#" class="obralink" data-id="' + k + '">' + asd + '</a></li>');
                     }
 
                   });  
@@ -132,7 +141,7 @@ $( "#tipobra" ).change(function() {
                     // console.log(k);
                     if(k!=0){
                       var asd = json_data.result[k][1];
-                      items.push('<li class="header"><a href="#" class="obralink" >' + asd + '</a></li>');
+                      items.push('<li class="header"><a href="#" class="obralink" data-id="' + k + '">' + asd + '</a></li>');
                     }
 
                   });  
@@ -143,7 +152,7 @@ $( "#tipobra" ).change(function() {
                     // console.log(k);
                     if(k!=0){
                       var asd = json_data.result[k][1];
-                      items.push('<li class="header"><a href="#" class="obralink" >' + asd + '</a></li>');
+                      items.push('<li class="header"><a href="#" class="obralink" data-id="' + k + '">' + asd + '</a></li>');
                     }
 
                   });  
@@ -153,28 +162,50 @@ $( "#tipobra" ).change(function() {
                   $.each(json_data.result, function(k,j) {
                     // console.log(k);
                     if(k!=0){
-                      var asd = json_data.result[k][1];
-                      items.push('<li class="header"><a href="#" class="obralink" >' + asd + '</a></li>');
+                      var asd = json_data.result[k][2];
+                      items.push('<li class="header"><a href="#" class="obralink" data-id="' + k + '">' + asd + '</a></li>');
                     }
 
                   });  
                   select.html(items.join(''));  
                   break;
               case '6':
-                  url = 'http://miraflores.cloudapi.junar.com/datastreams/invoke/RAMPA?auth_key=' + apik;
-                   url = 'http://localhost/miraflorea/assets/json/RAMPA.json';
+                  $.each(json_data.result, function(k,j) {
+                    // console.log(k);
+                    if(k!=0){
+                      var asd = json_data.result[k][3];
+                      items.push('<li class="header"><a href="#" class="obralink" data-id="' + k + '">' + asd + '</a></li>');
+                    }
+
+                  });  
+                  select.html(items.join(''));  
                   break;  
               case '7':
-                  url = 'http://miraflores.cloudapi.junar.com/datastreams/invoke/SENAL?auth_key=' + apik;
-                   url = 'http://localhost/miraflorea/assets/json/SENAL.json';
+                  $.each(json_data.result, function(k,j) {
+                    // console.log(k);
+                    if(k!=0){
+                      var asd = json_data.result[k][2];
+                      items.push('<li class="header"><a href="#" class="obralink" data-id="' + k + '">' + asd + '</a></li>');
+                    }
+
+                  });  
+                  select.html(items.join(''));  
                   break;                                                             
               default:
-                   url = 'http://localhost/miraflorea/assets/json/GESTO.json';
-                  // url = 'http://miraflores.cloudapi.junar.com/datastreams/invoke/GESTO?auth_key=' + apik;
+                  $.each(json_data.result, function(k,j) {
+                    // console.log(k);
+                    if(k!=0){
+                      var asd = json_data.result[k][5];
+                      items.push('<li class="header"><a href="#" class="obralink" data-id="' + k + '">' + asd + '</a></li>');
+                    }
+
+                  });  
+                  select.html(items.join(''));                         
                   break;
-          }            
-
-
+             }            
+        midata = json_data.result;
+        }
+        //-1
         
         }
 
@@ -184,7 +215,21 @@ $( "#tipobra" ).change(function() {
 
     });  
 
+
+$(document).on("click",'.obralink',function(e) {
+    // $(".obralink" ).click(function() {
+      var idx = $(this).data('id');
+      var row = midata[idx];
+       vset(row);
+       e.preventDefault();
+      // alert( row[1] );
+    });
+
+
+
 });
+
+
 
 
 // E-mail validation
