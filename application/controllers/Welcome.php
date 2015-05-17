@@ -6,7 +6,13 @@ class Welcome extends CI_Controller {
 	function __construct()
 	{
 		parent::__construct();
+		$this->load->library('ion_auth');
+		$this->load->library('form_validation');
+		$this->lang->load('auth');		
 		$this->load->model('Suscripcion_model');	
+		if (!$this->ion_auth->logged_in()) {
+			redirect('auth/login');
+		}		
 	}
 
 

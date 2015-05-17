@@ -98,6 +98,7 @@ $( "#tipobra" ).change(function() {
         // data:form_data,
         dataType:'json',
         success:function(json_data){
+          $("#obrades").empty();
           // console.log(json_data.result);
           var select = $("#obrades");
           var jj = json_data.result;
@@ -109,7 +110,7 @@ $( "#tipobra" ).change(function() {
                     // console.log(k);
                     if(k!=0){
                       var asd = json_data.result[k][5];
-                      items.push('<li class="header">' + asd + '</li>');
+                      items.push('<li class="header"><a href="#" class="obralink" >' + asd + '</a></li>');
                     }
 
                   });  
@@ -120,23 +121,44 @@ $( "#tipobra" ).change(function() {
                     // console.log(k);
                     if(k!=0){
                       var asd = json_data.result[k][3];
-                      items.push('<li class="header">' + asd + '</li>');
+                      items.push('<li class="header"><a href="#" class="obralink" >' + asd + '</a></li>');
                     }
 
                   });  
                   select.html(items.join(''));    
                   break;
               case '3':
-                  url = 'http://miraflores.cloudapi.junar.com/datastreams/invoke/MANTE-INTEG-DE-VIAS?auth_key=' + apik;
-                   url = 'http://localhost/miraflorea/assets/json/MANTE-INTEG-DE-VIAS.json';
+                  $.each(json_data.result, function(k,j) {
+                    // console.log(k);
+                    if(k!=0){
+                      var asd = json_data.result[k][1];
+                      items.push('<li class="header"><a href="#" class="obralink" >' + asd + '</a></li>');
+                    }
+
+                  });  
+                  select.html(items.join(''));    
                   break;
               case '4':
-                  url = 'http://miraflores.cloudapi.junar.com/datastreams/invoke/MANTE-PARCI-DE-VIAS?auth_key=' + apik;
-                   url = 'http://localhost/miraflorea/assets/json/MANTE-PARCI-DE-VIAS.json';
+                  $.each(json_data.result, function(k,j) {
+                    // console.log(k);
+                    if(k!=0){
+                      var asd = json_data.result[k][1];
+                      items.push('<li class="header"><a href="#" class="obralink" >' + asd + '</a></li>');
+                    }
+
+                  });  
+                  select.html(items.join(''));  
                   break;
               case '5':
-                  url = 'http://miraflores.cloudapi.junar.com/datastreams/invoke/PROYE-POR-MANTE?auth_key=' + apik;
-                   url = 'http://localhost/miraflorea/assets/json/PROYE-POR-MANTE.json';
+                  $.each(json_data.result, function(k,j) {
+                    // console.log(k);
+                    if(k!=0){
+                      var asd = json_data.result[k][1];
+                      items.push('<li class="header"><a href="#" class="obralink" >' + asd + '</a></li>');
+                    }
+
+                  });  
+                  select.html(items.join(''));  
                   break;
               case '6':
                   url = 'http://miraflores.cloudapi.junar.com/datastreams/invoke/RAMPA?auth_key=' + apik;
