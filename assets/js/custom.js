@@ -295,15 +295,17 @@ $(document).on("click",'.obralink',function(e) {
       var title = $(this).text();
        vset(row,title);
 
-       var disqus_shortname = 'sitiomirafloresopendata';
-    var disqus_identifier = $("#tipobra").val()+idx;
-    console.log(disqus_identifier);
 
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
+
+      var disqus_shortname = 'sitiomirafloresopendata';
+      var disqus_identifier = "'"+$("#tipobra").val()+idx+"'";
+      console.log(disqus_identifier);
+
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
        e.preventDefault();
       // alert( row[1] );
     });

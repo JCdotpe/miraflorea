@@ -84,3 +84,20 @@ define('EXIT_USER_INPUT', 7); // invalid user input
 define('EXIT_DATABASE', 8); // database error
 define('EXIT__AUTO_MIN', 9); // lowest automatically-assigned error code
 define('EXIT__AUTO_MAX', 125); // highest automatically-assigned error code
+
+
+if (isset($_SERVER['HTTP_HOST'])) {
+    $base_url = 'http' . '://' . $_SERVER['HTTP_HOST'] . str_replace(basename($_SERVER['SCRIPT_NAME']), '', $_SERVER['SCRIPT_NAME']);
+
+    // Base URI (si es diferente de la base_url)
+    $base_uri = parse_url($base_url, PHP_URL_PATH);
+    if (substr($base_uri, 0, 1) != '/')
+        $base_uri = '/' . $base_uri;
+    if (substr($base_uri, -1, 1) != '/')
+        $base_uri .= '/';
+}
+
+else {
+    $base_url = 'http://localhost/';
+    $base_uri = '/';
+}
