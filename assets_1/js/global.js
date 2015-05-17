@@ -1,3 +1,40 @@
+
+$("[data-message='enviarMensaje']").on('click', function () {
+    var datosMensaje= {
+        coment : $("input[name=message_comentario]").val(),
+        coment_id : $("input[name=message_comentario_id]").val(),
+        coment_obra_id: $(".id-obra").text()
+    }
+    var coment = $("input[name=message_comentario]").val();
+    var coment_id = $("input[name=message_comentario_id]").val();
+    var coment_obra_id = $(".id-obra").text();
+
+    console.log(coment+" "+coment_id+" - obra-id: "+ coment_obra_id);
+
+    $ajax({
+        type:'POST',
+        url:CI.base_url+"muestra/comentario_mensaje_ajax",
+        data:datosMensaje,
+        dataType:'json',
+        success:function(data){
+
+        }
+
+    });
+
+    $(".comment-obras").append('<div class="direct-chat-msg">'
+                          +'<div class="direct-chat-info clearfix">'
+                            +'<span class="direct-chat-name pull-left">Alexander Pierce</span>'
+                            +'<span class="direct-chat-timestamp pull-right">23 Jan 4:00 pm</span>'
+                          +'</div>'
+                          +'<img class="direct-chat-img" src="http://almsaeedstudio.com/themes/AdminLTE/dist/img/user1-128x128.jpg" alt="message user image">'
+                          +'<div class="direct-chat-text">'+coment+'</div>'
+                        +'</div>');
+
+    $("input[name=message_comentario]").val("");
+});
+
+
 function validarNumero(e) {
     tecla = (document.all) ? e.keyCode : e.which;
     if (tecla === 8)

@@ -1,11 +1,12 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
+class Muestra extends CI_Controller {
 
 	function __construct()
 	{
 		parent::__construct();
+		$this->load->model('muestra_model', 'modeloMuestra');
 		$this->load->library('ion_auth');
 		$this->load->library('form_validation');
 		$this->lang->load('auth');
@@ -18,10 +19,20 @@ class Welcome extends CI_Controller {
 
 	public function index()
 	{
-		$data['num'] = 666;
-		$this->load->view('index_view',$data);
+		$data['usuario_id'] = $this->session->userdata('user_id');
+		$data['muestras'] = "mostrando";
+		$this->load->view('index_message',$data);
 
 	}
+
+	public function comentario_mensaje_ajax(){
+		$_REQUEST['coment'] = $this->security->xss_clean(strip_tags($this->input->post('coment')));
+		$comentarioOk = $this->modeloMuestra->insertar_comentario_obra($_REQUEST);
+
+
+	}
+
+
 
 	// public function suscripcion()
 	// {
