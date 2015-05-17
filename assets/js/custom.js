@@ -39,8 +39,54 @@ function postular(){
 
 }
 
-function  vset(row){
-  
+ 
+var midata;
+var mitb;
+
+
+
+function vset(row, title){
+
+  $("#otitulo").text(title);
+  $("#cuerpo").removeClass('hide');
+$("#tablacuerpo > tbody > tr").remove();
+  // var fila2 = '<tr>';
+
+  for (var i = mitb.length - 1; i >= 0; i--) {
+  var fila1 = '<tr>';
+
+      fila1 += '<td>' + mitb[i] + '</td>';
+  // };
+  //     fila1 += '</tr>';
+  //  $('#tablacuerpo > tbody:last').append(fila1);
+
+  // for (var i = row.length - 1; i >= 0; i--) {
+      fila1 += '<td>' + row[i] + '</td>';
+  // };
+
+    fila1 += '</tr>';
+   $('#tablacuerpo > tbody:last').append(fila1);
+
+    };
+
+
+  // var fila1 = '<tr>';
+  // var fila2 = '<tr>';
+
+  // for (var i = mitb.length - 1; i >= 0; i--) {
+
+  //     fila1 += '<td>' + mitb[i] + '</td>';
+  // };
+  //     fila1 += '</tr>';
+  //  $('#tablacuerpo > tbody:last').append(fila1);
+
+  // for (var i = row.length - 1; i >= 0; i--) {
+  //     fila2 += '<td>' + row[i] + '</td>';
+  // };
+
+  //   fila2 += '</tr>';
+  //  $('#tablacuerpo > tbody:last').append(fila2);
+
 }
 
 
@@ -57,8 +103,7 @@ $(function(){
       }
   });
        
- 
-var midata;
+
 //val car_n
 $( "#tipobra" ).change(function() {
     var pre = $(this).val();
@@ -66,7 +111,7 @@ $( "#tipobra" ).change(function() {
     var apik = '10d6d50b287010c0bcaad0b0798b05314a13eafa';
     switch(pre) {
         case '1':
-            // url = 'http://miraflores.cloudapi.junar.com/datastreams/invoke/GESTO?auth_key=' + apik;
+            url = 'http://miraflores.cloudapi.junar.com/datastreams/invoke/GESTO?auth_key=' + apik;
              url = 'http://localhost/miraflorea/assets/json/GESTO.json';
             break;
         case '2':
@@ -94,8 +139,8 @@ $( "#tipobra" ).change(function() {
              url = 'http://localhost/miraflorea/assets/json/SENAL.json';
             break;                                                             
         default:
+            url = 'http://miraflores.cloudapi.junar.com/datastreams/invoke/GESTO?auth_key=' + apik;
              url = 'http://localhost/miraflorea/assets/json/GESTO.json';
-            // url = 'http://miraflores.cloudapi.junar.com/datastreams/invoke/GESTO?auth_key=' + apik;
             break;
     }
 
@@ -204,6 +249,7 @@ $( "#tipobra" ).change(function() {
                   break;
              }            
         midata = json_data.result;
+        mitb = json_data.result[0]
         }
         //-1
         
@@ -220,7 +266,8 @@ $(document).on("click",'.obralink',function(e) {
     // $(".obralink" ).click(function() {
       var idx = $(this).data('id');
       var row = midata[idx];
-       vset(row);
+      var title = $(this).text();
+       vset(row,title);
        e.preventDefault();
       // alert( row[1] );
     });

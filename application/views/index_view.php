@@ -357,9 +357,6 @@
          <option value="7">Señalización</option>
         </select>
 
-
-        <select id="xobra">
-        </select>        
         <!-- Main content -->
         <section class="content">
           <!-- Info boxes -->
@@ -376,45 +373,27 @@
                     <div class="box-header with-border">
 
 <div class="timeline-item">
-                    <div class="timeline-body">
+                    <div class="timeline-body hide" id="cuerpo">
 
-                    <h4>Título me cago de sueño 4/20</h4>
+                           <h3 id="otitulo"></h3>
 
-<table class="table table-striped">
-                    <tbody><tr>
-                      <th style="width: 10px">#</th>
-                      <th>Título</th>
-                      <th>Progress</th>
-                    </tr>
-                    <tr>
-                      <td>1.</td>
-                      <td>Update software</td>
-                      <td>etiqueta</td>
-                    </tr>
-                    <tr>
-                      <td>1.</td>
-                      <td>Update software</td>
-                      <td>etiqueta</td>
-                    </tr>
-                    <tr>
-                      <td>1.</td>
-                      <td>Update software</td>
-                      <td>etiqueta</td>
-                    </tr>
-                    <tr>
-                      <td>1.</td>
-                      <td>Update software</td>
-                      <td>etiqueta</td>
-                    </tr>
-                    <tr>
-                      <td>1.</td>
-                      <td>Update software</td>
-                      <td>etiqueta</td>
-                    </tr>                                                            
-                  </tbody></table>
+                           <table class="table table-striped" id="tablacuerpo">
+                                   <tbody>
+                                 <tr>
+                                     <th style="width: 10px">#</th>
+                                     <th>Título</th>
+                                     <th>Progress</th>
+                                   </tr>
+                                   <tr>
+                                     <td>1.</td>
+                                     <td>Update software</td>
+                                     <td>etiqueta</td>
+                                   </tr>                                                         
+                                 </tbody>
+                           </table>
 
 
-                    </div>
+                     </div>
                   </div>
 
                   </div>
