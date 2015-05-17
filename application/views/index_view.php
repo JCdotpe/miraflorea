@@ -278,24 +278,13 @@
                 <ul class="dropdown-menu">
                   <!-- User image -->
                   <li class="user-header">
-                    <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                    <img src="http://almsaeedstudio.com/themes/AdminLTE/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
                     <p>
-                      Alexander Pierce - Web Developer
-                      <small>Member since Nov. 2012</small>
+                      <?php echo  $this->ion_auth->user()->row()->username; ?>
+                     <!--  <small>Member since Nov. 2012</small> -->
                     </p>
                   </li>
-                  <!-- Menu Body -->
-                  <li class="user-body">
-                    <div class="col-xs-4 text-center">
-                      <a href="#">Followers</a>
-                    </div>
-                    <div class="col-xs-4 text-center">
-                      <a href="#">Sales</a>
-                    </div>
-                    <div class="col-xs-4 text-center">
-                      <a href="#">Friends</a>
-                    </div>
-                  </li>
+   <!--  -->
                   <!-- Menu Footer-->
                   <li class="user-footer">
                     <div class="pull-left">
@@ -326,7 +315,7 @@
               <img src="https://almsaeedstudio.com/themes/AdminLTE/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
             </div>
             <div class="pull-left info">
-              <p>Alexander Pierce</p>
+              <p><?php echo  $this->ion_auth->user()->row()->username; ?></p>
 
               <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
             </div>
@@ -342,7 +331,7 @@
           </form>
           <!-- /.search form -->
           <!-- sidebar menu: : style can be found in sidebar.less -->
-          <ul class="sidebar-menu" id="obrades">
+          <ul class="sidebar-menu" id="obrades" style="position: relative; overflow-x: scroll; height: 550px">
           </ul>
         </section>
         <!-- /.sidebar -->
@@ -388,10 +377,43 @@
 
 <div class="timeline-item">
                     <div class="timeline-body">
-                      <img src="http://placehold.it/150x100" alt="..." class="margin">
-                      <img src="http://placehold.it/150x100" alt="..." class="margin">
-                      <img src="http://placehold.it/150x100" alt="..." class="margin">
-                      <img src="http://placehold.it/150x100" alt="..." class="margin">
+
+                    <h4>Título me cago de sueño 4/20</h4>
+
+<table class="table table-striped">
+                    <tbody><tr>
+                      <th style="width: 10px">#</th>
+                      <th>Título</th>
+                      <th>Progress</th>
+                    </tr>
+                    <tr>
+                      <td>1.</td>
+                      <td>Update software</td>
+                      <td>etiqueta</td>
+                    </tr>
+                    <tr>
+                      <td>1.</td>
+                      <td>Update software</td>
+                      <td>etiqueta</td>
+                    </tr>
+                    <tr>
+                      <td>1.</td>
+                      <td>Update software</td>
+                      <td>etiqueta</td>
+                    </tr>
+                    <tr>
+                      <td>1.</td>
+                      <td>Update software</td>
+                      <td>etiqueta</td>
+                    </tr>
+                    <tr>
+                      <td>1.</td>
+                      <td>Update software</td>
+                      <td>etiqueta</td>
+                    </tr>                                                            
+                  </tbody></table>
+
+
                     </div>
                   </div>
 
