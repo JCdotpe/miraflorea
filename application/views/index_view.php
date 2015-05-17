@@ -15,18 +15,15 @@
          <!-- Meta Viewport -->
          <meta name="viewport" content="width=device-width, initial-scale=1">
         
-         <!-- All CSS Styles -->
-         <link type="text/css" href="assets/css/bootstrap.css" rel="stylesheet" media="screen" />
 
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
 
-    <!-- page specific plugin styles -->
-
-    <!-- text fonts -->
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,300" />
-
-    <!-- ace styles -->
-    <link rel="stylesheet" href="http://responsiweb.com/themes/preview/ace/1.3.3/dist/css/ace.min.css" class="ace-main-stylesheet" id="main-ace-style" />
+        <link rel="stylesheet" href="assets_1/css/bootstrap.min.css"  />
+        <link rel="stylesheet" href="assets_1/css/font-awesome.min.css"  />
+        <link rel="stylesheet" href="assets_1/css/ionicons.min.css"  />
+        <link rel="stylesheet" href="assets_1/css/global.css"  />
+        <link rel="stylesheet" href="assets_1/css/style.min.css"  />
+        <link rel="stylesheet" href="assets_1/css/skins/_all-skins.min.css"  />
+        <link rel="stylesheet" href="assets_1/css/select2.css"  />
 
             
          <!-- Modernizr -->
@@ -62,432 +59,589 @@
       
     </head>
 
-<body>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+<body class="skin-blue sidebar-mini">
+    <div class="wrapper">
+
+      <header class="main-header">
+
+        <!-- Logo -->
+        <a href="index2.html" class="logo">
+          <!-- mini logo for sidebar mini 50x50 pixels -->
+          <!-- logo for regular state and mobile devices -->
+          <span class="logo-lg"><b>#MIRAFLORES</b></span>
+        </a>
+
+        <!-- Header Navbar: style can be found in header.less -->
+        <nav class="navbar navbar-static-top" role="navigation">
+          <!-- Sidebar toggle button-->
+          <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
             <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">#MIRAFLORES</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Usuario</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <div class="container-fluid" style="padding-top: 50px">
-      <div class="row">
-
-        <div class="col-sm-4 sidebar">
-          <ul class="nav nav-sidebar">
-            <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Reports</a></li>
-            <li><a href="#">Analytics</a></li>
-            <li><a href="#">Export</a></li>
-          </ul>
-          <ul class="nav nav-sidebar">
-            <li><a href="">Nav item</a></li>
-            <li><a href="">Nav item again</a></li>
-            <li><a href="">One more nav</a></li>
-            <li><a href="">Another nav item</a></li>
-            <li><a href="">More navigation</a></li>
-          </ul>
-          <ul class="nav nav-sidebar">
-            <li><a href="">Nav item again</a></li>
-            <li><a href="">One more nav</a></li>
-            <li><a href="">Another nav item</a></li>
-          </ul>
-        </div>
-
-        <div class="col-sm-8 main">
-          <!-- aaa -->
-
-          <h1>#TopicMirafloresDatosAbiertos</h1>
-
-          <div class="row">
-<div class="col-xs-12">
-                <!-- PAGE CONTENT BEGINS -->
-                <div>
-                  <ul class="ace-thumbnails clearfix">
-                    <li>
-                      <a href="dist/images/gallery/image-1.jpg" title="Photo Title" data-rel="colorbox" class="cboxElement">
-                        <img width="150" height="150" alt="150x150" src="http://responsiweb.com/themes/preview/ace/1.3.3/dist/images/gallery/thumb-1.jpg">
-                      </a>
-
-                      <div class="tags">
-                        <span class="label-holder">
-                          <span class="label label-info">breakfast</span>
-                        </span>
-
-                        <span class="label-holder">
-                          <span class="label label-danger">fruits</span>
-                        </span>
-
-                        <span class="label-holder">
-                          <span class="label label-success">toast</span>
-                        </span>
-
-                        <span class="label-holder">
-                          <span class="label label-warning arrowed-in">diet</span>
-                        </span>
-                      </div>
-
-                      <div class="tools">
+          </a>
+          <!-- Navbar Right Menu -->
+          <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
+              <!-- Messages: style can be found in dropdown.less-->
+              <li class="dropdown messages-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="fa fa-envelope-o"></i>
+                  <span class="label label-success">4</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="header">You have 4 messages</li>
+                  <li>
+                    <!-- inner menu: contains the actual data -->
+                    <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 200px;"><ul class="menu" style="overflow: hidden; width: 100%; height: 200px;">
+                      <li><!-- start message -->
                         <a href="#">
-                          <i class="ace-icon fa fa-link"></i>
-                        </a>
-
-                        <a href="#">
-                          <i class="ace-icon fa fa-paperclip"></i>
-                        </a>
-
-                        <a href="#">
-                          <i class="ace-icon fa fa-pencil"></i>
-                        </a>
-
-                        <a href="#">
-                          <i class="ace-icon fa fa-times red"></i>
-                        </a>
-                      </div>
-                    </li>
-
-                    <li>
-                      <a href="dist/images/gallery/image-2.jpg" data-rel="colorbox" class="cboxElement">
-                        <img width="150" height="150" alt="150x150" src="http://responsiweb.com/themes/preview/ace/1.3.3/dist/images/gallery/thumb-2.jpg">
-                        <div class="text">
-                          <div class="inner">Sample Caption on Hover</div>
-                        </div>
-                      </a>
-                    </li>
-
-                    <li>
-                      <a href="dist/images/gallery/image-3.jpg" data-rel="colorbox" class="cboxElement">
-                        <img width="150" height="150" alt="150x150" src="http://responsiweb.com/themes/preview/ace/1.3.3/dist/images/gallery/thumb-3.jpg">
-                        <div class="text">
-                          <div class="inner">Sample Caption on Hover</div>
-                        </div>
-                      </a>
-
-                      <div class="tools tools-bottom">
-                        <a href="#">
-                          <i class="ace-icon fa fa-link"></i>
-                        </a>
-
-                        <a href="#">
-                          <i class="ace-icon fa fa-paperclip"></i>
-                        </a>
-
-                        <a href="#">
-                          <i class="ace-icon fa fa-pencil"></i>
-                        </a>
-
-                        <a href="#">
-                          <i class="ace-icon fa fa-times red"></i>
-                        </a>
-                      </div>
-                    </li>
-
-                    <li>
-                      <a href="dist/images/gallery/image-4.jpg" data-rel="colorbox" class="cboxElement">
-                        <img width="150" height="150" alt="150x150" src="http://responsiweb.com/themes/preview/ace/1.3.3/dist/images/gallery/thumb-4.jpg">
-                        <div class="tags">
-                          <span class="label-holder">
-                            <span class="label label-info arrowed">fountain</span>
-                          </span>
-
-                          <span class="label-holder">
-                            <span class="label label-danger">recreation</span>
-                          </span>
-                        </div>
-                      </a>
-
-                      <div class="tools tools-top">
-                        <a href="#">
-                          <i class="ace-icon fa fa-link"></i>
-                        </a>
-
-                        <a href="#">
-                          <i class="ace-icon fa fa-paperclip"></i>
-                        </a>
-
-                        <a href="#">
-                          <i class="ace-icon fa fa-pencil"></i>
-                        </a>
-
-                        <a href="#">
-                          <i class="ace-icon fa fa-times red"></i>
-                        </a>
-                      </div>
-                    </li>
-
-                    <li>
-                      <div>
-                        <img width="150" height="150" alt="150x150" src="http://responsiweb.com/themes/preview/ace/1.3.3/dist/images/gallery/thumb-5.jpg">
-                        <div class="text">
-                          <div class="inner">
-                            <span>Some Title!</span>
-
-                            <br>
-                            <a href="dist/images/gallery/image-5.jpg" data-rel="colorbox" class="cboxElement">
-                              <i class="ace-icon fa fa-search-plus"></i>
-                            </a>
-
-                            <a href="#">
-                              <i class="ace-icon fa fa-user"></i>
-                            </a>
-
-                            <a href="#">
-                              <i class="ace-icon fa fa-share"></i>
-                            </a>
+                          <div class="pull-left">
+                            <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
                           </div>
-                        </div>
-                      </div>
-                    </li>
-
-                    <li>
-                      <a href="dist/images/gallery/image-6.jpg" data-rel="colorbox" class="cboxElement">
-                        <img width="150" height="150" alt="150x150" src="http://responsiweb.com/themes/preview/ace/1.3.3/dist/images/gallery/thumb-6.jpg">
-                      </a>
-
-                      <div class="tools tools-right">
-                        <a href="#">
-                          <i class="ace-icon fa fa-link"></i>
+                          <h4>
+                            Support Team
+                            <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                          </h4>
+                          <p>Why not buy a new awesome theme?</p>
                         </a>
-
+                      </li><!-- end message -->
+                      <li>
                         <a href="#">
-                          <i class="ace-icon fa fa-paperclip"></i>
+                          <div class="pull-left">
+                            <img src="dist/img/user3-128x128.jpg" class="img-circle" alt="user image">
+                          </div>
+                          <h4>
+                            AdminLTE Design Team
+                            <small><i class="fa fa-clock-o"></i> 2 hours</small>
+                          </h4>
+                          <p>Why not buy a new awesome theme?</p>
                         </a>
-
+                      </li>
+                      <li>
                         <a href="#">
-                          <i class="ace-icon fa fa-pencil"></i>
+                          <div class="pull-left">
+                            <img src="dist/img/user4-128x128.jpg" class="img-circle" alt="user image">
+                          </div>
+                          <h4>
+                            Developers
+                            <small><i class="fa fa-clock-o"></i> Today</small>
+                          </h4>
+                          <p>Why not buy a new awesome theme?</p>
                         </a>
-
+                      </li>
+                      <li>
                         <a href="#">
-                          <i class="ace-icon fa fa-times red"></i>
+                          <div class="pull-left">
+                            <img src="dist/img/user3-128x128.jpg" class="img-circle" alt="user image">
+                          </div>
+                          <h4>
+                            Sales Department
+                            <small><i class="fa fa-clock-o"></i> Yesterday</small>
+                          </h4>
+                          <p>Why not buy a new awesome theme?</p>
                         </a>
-                      </div>
-                    </li>
-
-                    <li>
-                      <a href="dist/images/gallery/image-1.jpg" data-rel="colorbox" class="cboxElement">
-                        <img width="150" height="150" alt="150x150" src="http://responsiweb.com/themes/preview/ace/1.3.3/dist/images/gallery/thumb-1.jpg">
-                      </a>
-
-                      <div class="tools">
+                      </li>
+                      <li>
                         <a href="#">
-                          <i class="ace-icon fa fa-link"></i>
+                          <div class="pull-left">
+                            <img src="dist/img/user4-128x128.jpg" class="img-circle" alt="user image">
+                          </div>
+                          <h4>
+                            Reviewers
+                            <small><i class="fa fa-clock-o"></i> 2 days</small>
+                          </h4>
+                          <p>Why not buy a new awesome theme?</p>
                         </a>
-
+                      </li>
+                    </ul><div class="slimScrollBar" style="width: 3px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px; background: rgb(0, 0, 0);"></div><div class="slimScrollRail" style="width: 3px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; opacity: 0.2; z-index: 90; right: 1px; background: rgb(51, 51, 51);"></div></div>
+                  </li>
+                  <li class="footer"><a href="#">See All Messages</a></li>
+                </ul>
+              </li>
+              <!-- Notifications: style can be found in dropdown.less -->
+              <li class="dropdown notifications-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="fa fa-bell-o"></i>
+                  <span class="label label-warning">10</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="header">You have 10 notifications</li>
+                  <li>
+                    <!-- inner menu: contains the actual data -->
+                    <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 200px;"><ul class="menu" style="overflow: hidden; width: 100%; height: 200px;">
+                      <li>
                         <a href="#">
-                          <i class="ace-icon fa fa-paperclip"></i>
+                          <i class="fa fa-users text-aqua"></i> 5 new members joined today
                         </a>
-
+                      </li>
+                      <li>
                         <a href="#">
-                          <i class="ace-icon fa fa-pencil"></i>
+                          <i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the page and may cause design problems
                         </a>
-
+                      </li>
+                      <li>
                         <a href="#">
-                          <i class="ace-icon fa fa-times red"></i>
+                          <i class="fa fa-users text-red"></i> 5 new members joined
                         </a>
-                      </div>
-                    </li>
+                      </li>
 
-                    <li>
-                      <a href="dist/images/gallery/image-2.jpg" data-rel="colorbox" class="cboxElement">
-                        <img width="150" height="150" alt="150x150" src="http://responsiweb.com/themes/preview/ace/1.3.3/dist/images/gallery/thumb-2.jpg">
-                      </a>
-
-                      <div class="tools tools-top in">
+                      <li>
                         <a href="#">
-                          <i class="ace-icon fa fa-link"></i>
+                          <i class="fa fa-shopping-cart text-green"></i> 25 sales made
                         </a>
-
+                      </li>
+                      <li>
                         <a href="#">
-                          <i class="ace-icon fa fa-paperclip"></i>
+                          <i class="fa fa-user text-red"></i> You changed your username
                         </a>
-
+                      </li>
+                    </ul><div class="slimScrollBar" style="width: 3px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px; background: rgb(0, 0, 0);"></div><div class="slimScrollRail" style="width: 3px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; opacity: 0.2; z-index: 90; right: 1px; background: rgb(51, 51, 51);"></div></div>
+                  </li>
+                  <li class="footer"><a href="#">View all</a></li>
+                </ul>
+              </li>
+              <!-- Tasks: style can be found in dropdown.less -->
+              <li class="dropdown tasks-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="fa fa-flag-o"></i>
+                  <span class="label label-danger">9</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="header">You have 9 tasks</li>
+                  <li>
+                    <!-- inner menu: contains the actual data -->
+                    <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 200px;"><ul class="menu" style="overflow: hidden; width: 100%; height: 200px;">
+                      <li><!-- Task item -->
                         <a href="#">
-                          <i class="ace-icon fa fa-pencil"></i>
+                          <h3>
+                            Design some buttons
+                            <small class="pull-right">20%</small>
+                          </h3>
+                          <div class="progress xs">
+                            <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                              <span class="sr-only">20% Complete</span>
+                            </div>
+                          </div>
                         </a>
-
+                      </li><!-- end task item -->
+                      <li><!-- Task item -->
                         <a href="#">
-                          <i class="ace-icon fa fa-times red"></i>
+                          <h3>
+                            Create a nice theme
+                            <small class="pull-right">40%</small>
+                          </h3>
+                          <div class="progress xs">
+                            <div class="progress-bar progress-bar-green" style="width: 40%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                              <span class="sr-only">40% Complete</span>
+                            </div>
+                          </div>
                         </a>
-                      </div>
-                    </li>
-                  </ul>
-                </div><!-- PAGE CONTENT ENDS -->
-              </div>
+                      </li><!-- end task item -->
+                      <li><!-- Task item -->
+                        <a href="#">
+                          <h3>
+                            Some task I need to do
+                            <small class="pull-right">60%</small>
+                          </h3>
+                          <div class="progress xs">
+                            <div class="progress-bar progress-bar-red" style="width: 60%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                              <span class="sr-only">60% Complete</span>
+                            </div>
+                          </div>
+                        </a>
+                      </li><!-- end task item -->
+                      <li><!-- Task item -->
+                        <a href="#">
+                          <h3>
+                            Make beautiful transitions
+                            <small class="pull-right">80%</small>
+                          </h3>
+                          <div class="progress xs">
+                            <div class="progress-bar progress-bar-yellow" style="width: 80%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                              <span class="sr-only">80% Complete</span>
+                            </div>
+                          </div>
+                        </a>
+                      </li><!-- end task item -->
+                    </ul><div class="slimScrollBar" style="width: 3px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px; background: rgb(0, 0, 0);"></div><div class="slimScrollRail" style="width: 3px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; opacity: 0.2; z-index: 90; right: 1px; background: rgb(51, 51, 51);"></div></div>
+                  </li>
+                  <li class="footer">
+                    <a href="#">View all tasks</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- User Account: style can be found in dropdown.less -->
+              <li class="dropdown user user-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <img src="http://almsaeedstudio.com/themes/AdminLTE/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+                  <span class="hidden-xs">Alexander Pierce</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <!-- User image -->
+                  <li class="user-header">
+                    <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                    <p>
+                      Alexander Pierce - Web Developer
+                      <small>Member since Nov. 2012</small>
+                    </p>
+                  </li>
+                  <!-- Menu Body -->
+                  <li class="user-body">
+                    <div class="col-xs-4 text-center">
+                      <a href="#">Followers</a>
+                    </div>
+                    <div class="col-xs-4 text-center">
+                      <a href="#">Sales</a>
+                    </div>
+                    <div class="col-xs-4 text-center">
+                      <a href="#">Friends</a>
+                    </div>
+                  </li>
+                  <!-- Menu Footer-->
+                  <li class="user-footer">
+                    <div class="pull-left">
+                      <a href="#" class="btn btn-default btn-flat">Profile</a>
+                    </div>
+                    <div class="pull-right">
+                      <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <!-- Control Sidebar Toggle Button -->
+              <li>
+                <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+              </li>
+            </ul>
           </div>
 
-<div class="widget-box">
-                      <div class="widget-header">
-                        <h4 class="widget-title lighter smaller">
-                          <i class="ace-icon fa fa-comment blue"></i>
-                          Conversation
-                        </h4>
-                      </div>
+        </nav>
+      </header>
+      <!-- Left side column. contains the logo and sidebar -->
+      <aside class="main-sidebar">
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar" style="height: auto;">
+          <!-- Sidebar user panel -->
+          <div class="user-panel">
+            <div class="pull-left image">
+              <img src="https://almsaeedstudio.com/themes/AdminLTE/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+            </div>
+            <div class="pull-left info">
+              <p>Alexander Pierce</p>
 
-                      <div class="widget-body">
-                        <div class="widget-main no-padding">
-                          <div class="dialogs ace-scroll"><div class="scroll-track scroll-active" style="display: block; height: 300px;"><div class="scroll-bar" style="height: 236px; top: 64px;"></div></div><div class="scroll-content" style="max-height: 300px;">
-                            <div class="itemdiv dialogdiv">
-                              <div class="user">
-                                <img alt="Alexa's Avatar" src="http://responsiweb.com/themes/preview/ace/1.3.3/dist/avatars/avatar1.png">
-                              </div>
+              <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+            </div>
+          </div>
+          <!-- search form -->
+          <form action="#" method="get" class="sidebar-form">
+            <div class="input-group">
+              <input type="text" name="q" class="form-control" placeholder="Search...">
+              <span class="input-group-btn">
+                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i></button>
+              </span>
+            </div>
+          </form>
+          <!-- /.search form -->
+          <!-- sidebar menu: : style can be found in sidebar.less -->
+          <ul class="sidebar-menu">
+            <li class="header">#Topic 1</li>
+            <li class="header">#Topic 2</li>
+            <li class="header">#Topic 3</li>
+          </ul>
+        </section>
+        <!-- /.sidebar -->
+      </aside>
 
-                              <div class="body">
-                                <div class="time">
-                                  <i class="ace-icon fa fa-clock-o"></i>
-                                  <span class="green">4 sec</span>
-                                </div>
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper" style="min-height: 916px;">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+          <h1>
+            #DatosAbiertos
+          </h1>
 
-                                <div class="name">
-                                  <a href="#">Alexa</a>
-                                </div>
-                                <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo massa sed ipsum porttitor facilisis.</div>
+        </section>
 
-                                <div class="tools">
-                                  <a href="#" class="btn btn-minier btn-info">
-                                    <i class="icon-only ace-icon fa fa-share"></i>
-                                  </a>
-                                </div>
-                              </div>
-                            </div>
+        <!-- Main content -->
+        <section class="content">
+          <!-- Info boxes -->
 
-                            <div class="itemdiv dialogdiv">
-                              <div class="user">
-                                <img alt="John's Avatar" src="http://responsiweb.com/themes/preview/ace/1.3.3/dist/avatars/avatar.png">
-                              </div>
 
-                              <div class="body">
-                                <div class="time">
-                                  <i class="ace-icon fa fa-clock-o"></i>
-                                  <span class="blue">38 sec</span>
-                                </div>
+          <div class="row">
+            <div class="col-md-12">
+ 
+              <div class="row">
+                <div class="col-md-9">
 
-                                <div class="name">
-                                  <a href="#">John</a>
-                                </div>
-                                <div class="text">Raw denim you probably haven't heard of them jean shorts Austin.</div>
+                  <!-- DIRECT CHAT -->
+                  <div class="box box-warning direct-chat direct-chat-warning">
+                    <div class="box-header with-border">
 
-                                <div class="tools">
-                                  <a href="#" class="btn btn-minier btn-info">
-                                    <i class="icon-only ace-icon fa fa-share"></i>
-                                  </a>
-                                </div>
-                              </div>
-                            </div>
-
-                            <div class="itemdiv dialogdiv">
-                              <div class="user">
-                                <img alt="Bob's Avatar" src="http://responsiweb.com/themes/preview/ace/1.3.3/dist/avatars/user.jpg">
-                              </div>
-
-                              <div class="body">
-                                <div class="time">
-                                  <i class="ace-icon fa fa-clock-o"></i>
-                                  <span class="orange">2 min</span>
-                                </div>
-
-                                <div class="name">
-                                  <a href="#">Bob</a>
-                                  <span class="label label-info arrowed arrowed-in-right">admin</span>
-                                </div>
-                                <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo massa sed ipsum porttitor facilisis.</div>
-
-                                <div class="tools">
-                                  <a href="#" class="btn btn-minier btn-info">
-                                    <i class="icon-only ace-icon fa fa-share"></i>
-                                  </a>
-                                </div>
-                              </div>
-                            </div>
-
-                            <div class="itemdiv dialogdiv">
-                              <div class="user">
-                                <img alt="Jim's Avatar" src="http://responsiweb.com/themes/preview/ace/1.3.3/dist/avatars/avatar4.png">
-                              </div>
-
-                              <div class="body">
-                                <div class="time">
-                                  <i class="ace-icon fa fa-clock-o"></i>
-                                  <span class="grey">3 min</span>
-                                </div>
-
-                                <div class="name">
-                                  <a href="#">Jim</a>
-                                </div>
-                                <div class="text">Raw denim you probably haven't heard of them jean shorts Austin.</div>
-
-                                <div class="tools">
-                                  <a href="#" class="btn btn-minier btn-info">
-                                    <i class="icon-only ace-icon fa fa-share"></i>
-                                  </a>
-                                </div>
-                              </div>
-                            </div>
-
-                            <div class="itemdiv dialogdiv">
-                              <div class="user">
-                                <img alt="Alexa's Avatar" src="http://responsiweb.com/themes/preview/ace/1.3.3/dist/avatars/avatar1.png">
-                              </div>
-
-                              <div class="body">
-                                <div class="time">
-                                  <i class="ace-icon fa fa-clock-o"></i>
-                                  <span class="green">4 min</span>
-                                </div>
-
-                                <div class="name">
-                                  <a href="#">Alexa</a>
-                                </div>
-                                <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-
-                                <div class="tools">
-                                  <a href="#" class="btn btn-minier btn-info">
-                                    <i class="icon-only ace-icon fa fa-share"></i>
-                                  </a>
-                                </div>
-                              </div>
-                            </div>
-                          </div></div>
-
-                          <form>
-                            <div class="form-actions">
-                              <div class="input-group">
-                                <input placeholder="Type your message here ..." type="text" class="form-control" name="message">
-                                <span class="input-group-btn">
-                                  <button class="btn btn-sm btn-info no-radius" type="button">
-                                    <i class="ace-icon fa fa-share"></i>
-                                    Send
-                                  </button>
-                                </span>
-                              </div>
-                            </div>
-                          </form>
-                        </div><!-- /.widget-main -->
-                      </div><!-- /.widget-body -->
+<div class="timeline-item">
+                    <div class="timeline-body">
+                      <img src="http://placehold.it/150x100" alt="..." class="margin">
+                      <img src="http://placehold.it/150x100" alt="..." class="margin">
+                      <img src="http://placehold.it/150x100" alt="..." class="margin">
+                      <img src="http://placehold.it/150x100" alt="..." class="margin">
                     </div>
+                  </div>
 
-          <!-- aaa -->
+                  </div>
+                  </div>
+
+                  <!-- DIRECT CHAT -->
+                  <div class="box box-warning direct-chat direct-chat-warning">
+                    <div class="box-header with-border">
+                      <h3 class="box-title">Direct Chat</h3>
+                      <div class="box-tools pull-right">
+                        <span data-toggle="tooltip" title="3 New Messages" class="badge bg-yellow">3</span>
+                        <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                        <button class="btn btn-box-tool" data-toggle="tooltip" title="Contacts" data-widget="chat-pane-toggle"><i class="fa fa-comments"></i></button>
+                        <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                      </div>
+                    </div><!-- /.box-header -->
+                    <div class="box-body">
+                      <!-- Conversations are loaded here -->
+                      <div class="direct-chat-messages">
+                        <!-- Message. Default to the left -->
+                        <div class="direct-chat-msg">
+                          <div class="direct-chat-info clearfix">
+                            <span class="direct-chat-name pull-left">Alexander Pierce</span>
+                            <span class="direct-chat-timestamp pull-right">23 Jan 2:00 pm</span>
+                          </div><!-- /.direct-chat-info -->
+                          <img class="direct-chat-img" src="http://almsaeedstudio.com/themes/AdminLTE/dist/img/user1-128x128.jpg" alt="message user image"><!-- /.direct-chat-img -->
+                          <div class="direct-chat-text">
+                            Is this template really for free? That's unbelievable!
+                          </div><!-- /.direct-chat-text -->
+                        </div><!-- /.direct-chat-msg -->
+
+                        <!-- Message to the right -->
+                        <div class="direct-chat-msg right">
+                          <div class="direct-chat-info clearfix">
+                            <span class="direct-chat-name pull-right">Sarah Bullock</span>
+                            <span class="direct-chat-timestamp pull-left">23 Jan 2:05 pm</span>
+                          </div><!-- /.direct-chat-info -->
+                          <img class="direct-chat-img" src="http://almsaeedstudio.com/themes/AdminLTE/dist/img/user3-128x128.jpg" alt="message user image"><!-- /.direct-chat-img -->
+                          <div class="direct-chat-text">
+                            You better believe it!
+                          </div><!-- /.direct-chat-text -->
+                        </div><!-- /.direct-chat-msg -->
+
+                        <!-- Message. Default to the left -->
+                        <div class="direct-chat-msg">
+                          <div class="direct-chat-info clearfix">
+                            <span class="direct-chat-name pull-left">Alexander Pierce</span>
+                            <span class="direct-chat-timestamp pull-right">23 Jan 5:37 pm</span>
+                          </div><!-- /.direct-chat-info -->
+                          <img class="direct-chat-img" src="http://almsaeedstudio.com/themes/AdminLTE/dist/img/user1-128x128.jpg" alt="message user image"><!-- /.direct-chat-img -->
+                          <div class="direct-chat-text">
+                            Working with AdminLTE on a great new app! Wanna join?
+                          </div><!-- /.direct-chat-text -->
+                        </div><!-- /.direct-chat-msg -->
+
+                        <!-- Message to the right -->
+                        <div class="direct-chat-msg right">
+                          <div class="direct-chat-info clearfix">
+                            <span class="direct-chat-name pull-right">Sarah Bullock</span>
+                            <span class="direct-chat-timestamp pull-left">23 Jan 6:10 pm</span>
+                          </div><!-- /.direct-chat-info -->
+                          <img class="direct-chat-img" src="http://almsaeedstudio.com/themes/AdminLTE/dist/img/user3-128x128.jpg" alt="message user image"><!-- /.direct-chat-img -->
+                          <div class="direct-chat-text">
+                            I would love to.
+                          </div><!-- /.direct-chat-text -->
+                        </div><!-- /.direct-chat-msg -->
+
+                      </div><!--/.direct-chat-messages-->
 
 
-        </div>
-      </div>
-    </div>
+                      <!-- Contacts are loaded here -->
+                      <div class="direct-chat-contacts">
+                        <ul class="contacts-list">
+                          <li>
+                            <a href="#">
+                              <img class="contacts-list-img" src="http://almsaeedstudio.com/themes/AdminLTE/dist/img/user1-128x128.jpg">
+                              <div class="contacts-list-info">
+                                <span class="contacts-list-name">
+                                  Count Dracula
+                                  <small class="contacts-list-date pull-right">2/28/2015</small>
+                                </span>
+                                <span class="contacts-list-msg">How have you been? I was...</span>
+                              </div><!-- /.contacts-list-info -->
+                            </a>
+                          </li><!-- End Contact Item -->
+                          <li>
+                            <a href="#">
+                              <img class="contacts-list-img" src="http://almsaeedstudio.com/themes/AdminLTE/dist/img/user7-128x128.jpg">
+                              <div class="contacts-list-info">
+                                <span class="contacts-list-name">
+                                  Sarah Doe
+                                  <small class="contacts-list-date pull-right">2/23/2015</small>
+                                </span>
+                                <span class="contacts-list-msg">I will be waiting for...</span>
+                              </div><!-- /.contacts-list-info -->
+                            </a>
+                          </li><!-- End Contact Item -->
+                          <li>
+                            <a href="#">
+                              <img class="contacts-list-img" src="http://almsaeedstudio.com/themes/AdminLTE/dist/img/user3-128x128.jpg">
+                              <div class="contacts-list-info">
+                                <span class="contacts-list-name">
+                                  Nadia Jolie
+                                  <small class="contacts-list-date pull-right">2/20/2015</small>
+                                </span>
+                                <span class="contacts-list-msg">I'll call you back at...</span>
+                              </div><!-- /.contacts-list-info -->
+                            </a>
+                          </li><!-- End Contact Item -->
+                          <li>
+                            <a href="#">
+                              <img class="contacts-list-img" src="http://almsaeedstudio.com/themes/AdminLTE/dist/img/user5-128x128.jpg">
+                              <div class="contacts-list-info">
+                                <span class="contacts-list-name">
+                                  Nora S. Vans
+                                  <small class="contacts-list-date pull-right">2/10/2015</small>
+                                </span>
+                                <span class="contacts-list-msg">Where is your new...</span>
+                              </div><!-- /.contacts-list-info -->
+                            </a>
+                          </li><!-- End Contact Item -->
+                          <li>
+                            <a href="#">
+                              <img class="contacts-list-img" src="http://almsaeedstudio.com/themes/AdminLTE/dist/img/user6-128x128.jpg">
+                              <div class="contacts-list-info">
+                                <span class="contacts-list-name">
+                                  John K.
+                                  <small class="contacts-list-date pull-right">1/27/2015</small>
+                                </span>
+                                <span class="contacts-list-msg">Can I take a look at...</span>
+                              </div><!-- /.contacts-list-info -->
+                            </a>
+                          </li><!-- End Contact Item -->
+                          <li>
+                            <a href="#">
+                              <img class="contacts-list-img" src="http://almsaeedstudio.com/themes/AdminLTE/dist/img/user8-128x128.jpg">
+                              <div class="contacts-list-info">
+                                <span class="contacts-list-name">
+                                  Kenneth M.
+                                  <small class="contacts-list-date pull-right">1/4/2015</small>
+                                </span>
+                                <span class="contacts-list-msg">Never mind I found...</span>
+                              </div><!-- /.contacts-list-info -->
+                            </a>
+                          </li><!-- End Contact Item -->
+                        </ul><!-- /.contatcts-list -->
+                      </div><!-- /.direct-chat-pane -->
+                    </div><!-- /.box-body -->
+                    <div class="box-footer">
+                      <form action="#" method="post">
+                        <div class="input-group">
+                          <input type="text" name="message" placeholder="Type Message ..." class="form-control">
+                          <span class="input-group-btn">
+                            <button type="button" class="btn btn-warning btn-flat">Send</button>
+                          </span>
+                        </div>
+                      </form>
+                    </div><!-- /.box-footer-->
+                  </div><!--/.direct-chat -->
+                </div><!-- /.col -->
 
-         <!-- Javascript Files -->
-         <script type="text/javascript" src="assets/js/jquery-1.11.2.min.js"></script>         
-         <script type="text/javascript" src="assets/js/bootstrap.min.js"></script> 
+                <div class="col-md-3">
+                  <!-- USERS LIST -->
+                  <div class="box box-danger">
+                    <div class="box-header with-border">
+                      <h3 class="box-title">Latest Members</h3>
+                      <div class="box-tools pull-right">
+                        <span class="label label-danger">8 New Members</span>
+                        <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                        <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                      </div>
+                    </div><!-- /.box-header -->
+                    <div class="box-body no-padding">
+                      <ul class="users-list clearfix">
+                        <li>
+                          <img src="https://almsaeedstudio.com/themes/AdminLTE/dist/img/user1-128x128.jpg" alt="User Image">
+                          <a class="users-list-name" href="#">Alexander Pierce</a>
+                          <span class="users-list-date">Today</span>
+                        </li>
+                        <li>
+                          <img src="https://almsaeedstudio.com/themes/AdminLTE/dist/img/user8-128x128.jpg" alt="User Image">
+                          <a class="users-list-name" href="#">Norman</a>
+                          <span class="users-list-date">Yesterday</span>
+                        </li>
+                        <li>
+                          <img src="https://almsaeedstudio.com/themes/AdminLTE/dist/img/user7-128x128.jpg" alt="User Image">
+                          <a class="users-list-name" href="#">Jane</a>
+                          <span class="users-list-date">12 Jan</span>
+                        </li>
+                        <li>
+                          <img src="https://almsaeedstudio.com/themes/AdminLTE/dist/img/user6-128x128.jpg" alt="User Image">
+                          <a class="users-list-name" href="#">John</a>
+                          <span class="users-list-date">12 Jan</span>
+                        </li>
+                        <li>
+                          <img src="https://almsaeedstudio.com/themes/AdminLTE/dist/img/user2-160x160.jpg" alt="User Image">
+                          <a class="users-list-name" href="#">Alexander</a>
+                          <span class="users-list-date">13 Jan</span>
+                        </li>
+                        <li>
+                          <img src="https://almsaeedstudio.com/themes/AdminLTE/dist/img/user5-128x128.jpg" alt="User Image">
+                          <a class="users-list-name" href="#">Sarah</a>
+                          <span class="users-list-date">14 Jan</span>
+                        </li>
+                        <li>
+                          <img src="https://almsaeedstudio.com/themes/AdminLTE/dist/img/user4-128x128.jpg" alt="User Image">
+                          <a class="users-list-name" href="#">Nora</a>
+                          <span class="users-list-date">15 Jan</span>
+                        </li>
+                        <li>
+                          <img src="https://almsaeedstudio.com/themes/AdminLTE/dist/img/user3-128x128.jpg" alt="User Image">
+                          <a class="users-list-name" href="#">Nadia</a>
+                          <span class="users-list-date">15 Jan</span>
+                        </li>
+                      </ul><!-- /.users-list -->
+                    </div><!-- /.box-body -->
+                    <div class="box-footer text-center">
+                      <a href="javascript::" class="uppercase">View All Users</a>
+                    </div><!-- /.box-footer -->
+                  </div><!--/.box -->
+                </div><!-- /.col -->
+              </div><!-- /.row -->
+
+              </div><!-- /.box -->
+            </div><!-- /.col -->
+
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+        </section><!-- /.content -->
+      </div><!-- /.content-wrapper -->
+
+
+
+    </div><!-- ./wrapper -->
+
+    <!-- jQuery 2.1.4 -->
+    <script src="assets_1/plugins/jQuery/jQuery-2.1.4.min.js"></script>
+    <!-- Bootstrap 3.3.2 JS -->
+    <script src="assets_1/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <!-- FastClick -->
+    <script src="assets_1/plugins/fastclick/fastclick.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="assets_1/dist/js/app.min.js" type="text/javascript"></script>
+    <!-- Sparkline -->
+    <script src="assets_1/plugins/sparkline/jquery.sparkline.min.js" type="text/javascript"></script>
+    <!-- jvectormap -->
+    <script src="assets_1/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js" type="text/javascript"></script>
+    <script src="assets_1/plugins/jvectormap/jquery-jvectormap-world-mill-en.js" type="text/javascript"></script>
+    <!-- SlimScroll 1.3.0 -->
+    <script src="assets_1/plugins/slimScroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+    <!-- ChartJS 1.0.1 -->
+    <script src="assets_1/plugins/chartjs/Chart.min.js" type="text/javascript"></script>
+
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+    <script src="assets_1/dist/js/pages/dashboard2.js" type="text/javascript"></script>
+
+    <!-- AdminLTE for demo purposes -->
+    <script src="assets_1/dist/js/demo.js" type="text/javascript"></script>
   
+<div class="jvectormap-label"></div></body>
 
 </html>
