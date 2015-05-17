@@ -342,10 +342,7 @@
           </form>
           <!-- /.search form -->
           <!-- sidebar menu: : style can be found in sidebar.less -->
-          <ul class="sidebar-menu">
-            <li class="header">#Topic 1</li>
-            <li class="header">#Topic 2</li>
-            <li class="header">#Topic 3</li>
+          <ul class="sidebar-menu" id="obrades">
           </ul>
         </section>
         <!-- /.sidebar -->
@@ -360,7 +357,20 @@
           </h1>
 
         </section>
+        <select id="tipobra">
+         <option value="-1">-</option>
+         <option value="1">Gestión</option>
+         <option value="2">Luminarias</option>
+         <option value="3">Mantenimiento Integral de Vías</option>
+         <option value="4">Mantenimiento Parcial de Vías</option>
+         <option value="5">Proyectos por mantenimiento</option>
+         <option value="6">Rampas</option>
+         <option value="7">Señalización</option>
+        </select>
 
+
+        <select id="xobra">
+        </select>        
         <!-- Main content -->
         <section class="content">
           <!-- Info boxes -->
@@ -619,9 +629,9 @@
     </div><!-- ./wrapper -->
 
     <!-- jQuery 2.1.4 -->
-    <script src="assets_1/plugins/jQuery/jQuery-2.1.4.min.js"></script>
+    <script src="assets_1/js/jquery.min.js"></script>
     <!-- Bootstrap 3.3.2 JS -->
-    <script src="assets_1/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="assets_1/js/bootstrap.min.js" type="text/javascript"></script>
     <!-- FastClick -->
     <script src="assets_1/plugins/fastclick/fastclick.min.js"></script>
     <!-- AdminLTE App -->
@@ -641,6 +651,7 @@
 
     <!-- AdminLTE for demo purposes -->
     <script src="assets_1/dist/js/demo.js" type="text/javascript"></script>
+    <script src="assets/js/custom.js" type="text/javascript"></script>
   
 <div class="jvectormap-label"></div></body>
 
